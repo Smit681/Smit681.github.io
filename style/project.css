@@ -2,7 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-  
+
 }
 .projectTitle{
     position: absolute;
@@ -19,7 +19,7 @@
     width: 100vw;
     height: 100vh;
     place-items: center;
-    background: #23274a;
+    background: black;
     color: white;
     text-shadow: 0 2px 0 #000;
     overflow: hidden;
@@ -73,8 +73,8 @@
   .dashes circle{
     animation: rotate 10s linear infinite;
   }
-  
-  
+
+
   @keyframes rotate {
     to {
       -webkit-transform: rotate(1turn);
@@ -82,7 +82,7 @@
     }
   }
 
-  
+
 .button{
     position: absolute;
     background-color: white;
@@ -132,7 +132,7 @@
     left: 49vw;
     top: 5vw;
     border-radius: 50%;
-    
+
 }
 .image-enter{
     animation: image-enter 1s;
@@ -220,22 +220,22 @@
 
   @keyframes name-enter {
     from {
-     
+
               transform: translateX(100%);
       opacity: 0;
     }
     to {
-      
+
               transform: none;
       opacity: 1;
     }
   }
-  
-  
-  
+
+
+
   @keyframes name-exit {
     from {
-     
+
         transform: none;
         opacity: 1;
     }
@@ -244,9 +244,9 @@
         opacity: 0;
     }
   }
-  
 
-  
+
+
   @keyframes image-enter {
     from {
         transform: scale(1.2);
@@ -258,17 +258,17 @@
         opacity: 1;
     }
   }
-  
-  
-  
+
+
+
   @keyframes image-exit {
     from {
-     
+
               transform: none;
       opacity: 1;
     }
     to {
-      
+
               transform: scale(0.7);
       opacity: 0;
     }
@@ -282,8 +282,8 @@
         opacity: 0;
     }
   }
-  
-  
+
+
   @keyframes tag1-exit {
     to {
         transform-origin: 20vw 10vw;
@@ -298,8 +298,8 @@
         opacity: 0;
     }
   }
-  
-  
+
+
   @keyframes tag2-exit {
     to {
         transform-origin: 20vw -10vw;
@@ -314,8 +314,8 @@
         opacity: 0;
     }
   }
-  
-  
+
+
   @keyframes tag3-exit {
     to {
         transform-origin: -10vw -10vw;
@@ -333,8 +333,8 @@
         opacity: 1;
     }
   }
-  
-  
+
+
   @keyframes quote-exit {
     to {
         transform: translate(-2vw, 2vw) scale(0.8);
@@ -369,7 +369,7 @@
     #project{
         height: 69vh;
     }
-    
+
     .slide-image{
         height: 65vw;
         width: 65vw;
@@ -422,5 +422,3 @@
     }    
 
 }
-
- 
