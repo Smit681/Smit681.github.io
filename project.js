@@ -1,8 +1,8 @@
 const slides = [{
     image: "./assets/foodhub.jpg",
-    name: "FoodHub",
-    desc: "Created using Expressin the backend, CSS/Bootstrap/Handlebars/jQuery in the frontend and MongoDB for the database, following MVC software design. User can create a cart of dishes and place an order. Administrators can add/update/remove data from the database. SendGrid is used for sending email upon signup and order. User passwords are encrypted using bcryptjs. Hosted on Heroku.",
-    link: "https://foodhub68.herokuapp.com/",
+    name: "Little India",
+    desc: "Created using Express in the backend, CSS/Bootstrap/Handlebars/jQuery in the frontend and MongoDB for the database, following MVC software design. User can create a cart of dishes and place an order. Administrators can add/update/remove data from the database. SendGrid is used for sending email upon signup and order. User passwords are encrypted using bcryptjs. Hosted on Heroku.",
+    link: "https://little-india.onrender.com/",
     quote: "An online restaurant where user creates carts, order food and admins manipulates menu using CRUD operations",
     stats: [{ value: "Express WebApp" },
       { value: "CSS/Bootstrap Handlebars/jQuery" },
@@ -115,14 +115,14 @@ function getWidth() {
 var counter = 0;
 
 function nextProject(){
-    
-    
+
+
     let slideName = document.getElementsByClassName('slide-name')[0];
-    
+
     slideName.classList.remove("name-enter");
     slideName.classList.add("name-exit");
     slideName.animate(nameExit);
-    
+
     slideName.addEventListener("animationend", () => {
         var newone = slideName.cloneNode(true);
         slideName.parentNode.replaceChild(newone, slideName);
@@ -135,11 +135,11 @@ function nextProject(){
 
 
     let prjdec = document.getElementsByClassName('prjdec')[0];
-    
+
     prjdec.classList.remove("prjdec-enter");
     prjdec.classList.add("prjdec-exit");
     prjdec.animate(descExit);
-    
+
     prjdec.addEventListener("animationend", () => {
         var newone4 = prjdec.cloneNode(true);
         prjdec.parentNode.replaceChild(newone4, prjdec);
@@ -149,11 +149,11 @@ function nextProject(){
     })
 
     let image = document.getElementsByClassName('slide-image')[0];
-    
+
     image.classList.remove("image-enter");
     image.classList.add("image-exit");
     image.animate(imgExit);
-    
+
     image.addEventListener("animationend", () => {
         var newone3 = image.cloneNode(true);
         image.parentNode.replaceChild(newone3, image);
@@ -161,13 +161,13 @@ function nextProject(){
         newone3.classList.add("image-enter");
         newone3.setAttribute("src", slides[counter].image);
     })
-       
+
     let quote = document.getElementsByClassName('quote')[0];
-    
+
     quote.classList.remove("quote-enter");
     quote.classList.add("quote-exit");
     quote.animate(quoteExit);
-    
+
     quote.addEventListener("animationend", () => {
         var newone2 = quote.cloneNode(true);
         quote.parentNode.replaceChild(newone2, quote);
@@ -177,11 +177,11 @@ function nextProject(){
     })
 
     let tag1 = document.getElementsByClassName('tag1')[0];
-    
+
     tag1.classList.remove("tag1-enter");
     tag1.classList.add("tag1-exit");
     tag1.animate(tag1Exit);
-    
+
     tag1.addEventListener("animationend", () => {
         var newone3 = tag1.cloneNode(true);
         tag1.parentNode.replaceChild(newone3, tag1);
@@ -191,11 +191,11 @@ function nextProject(){
     })
 
     let tag2 = document.getElementsByClassName('tag2')[0];
-    
+
     tag2.classList.remove("tag2-enter");
     tag2.classList.add("tag2-exit");
     tag2.animate(tag2Exit);
-    
+
     tag2.addEventListener("animationend", () => {
         var newone3 = tag2.cloneNode(true);
         tag2.parentNode.replaceChild(newone3, tag2);
@@ -205,11 +205,11 @@ function nextProject(){
     })
 
     let tag3 = document.getElementsByClassName('tag3')[0];
-    
+
     tag3.classList.remove("tag3-enter");
     tag3.classList.add("tag3-exit");
     tag3.animate(tag3Exit);
-    
+
     tag3.addEventListener("animationend", () => {
         var newone3 = tag3.cloneNode(true);
         tag3.parentNode.replaceChild(newone3, tag3);
@@ -217,7 +217,7 @@ function nextProject(){
         newone3.classList.add("tag3-enter");
         newone3.innerHTML = slides[counter].stats[2].value;
     })
-    
+
     counter++;
     if(counter == 3)
         counter = 0;
