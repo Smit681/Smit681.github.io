@@ -79,6 +79,7 @@ body{
     font-size: 30px;
     font-family: 'Rokkitt', serif;
     font-weight: bold;
+    text-shadow: 1px 1px black;
     z-index: 100;
     transition: color 0.5s ease;
 }
